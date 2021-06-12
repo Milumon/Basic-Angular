@@ -1,0 +1,35 @@
+<section id="genios" class="padded">
+    <div class="container">
+        <h2>Genios</h2>
+        <h3>{{frase}}</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Cargo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let heroe of personas"
+                            (click)="seleccionar(heroe)"
+                            [class.fila-seleccionada]="heroe === heroeElegido">
+                            <td>{{heroe.id}}</td>
+                            <td>{{heroe.nombres}}</td>
+                            <td>{{heroe.cargo}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Ganador: {{heroeGanador.nombres}}</h3>        
+            </div>
+            <div class="col-md-4" *ngIf="heroeElegido">
+                <img src={{heroeElegido.foto}} class="img-fluid" alt={{heroeElegido.nombres}}/>
+                <h3>Genio elegido</h3>
+                <h4>{{heroeElegido.nombres}}</h4>
+                <p>{{heroeElegido.cargo}}<br>{{heroeElegido.ciudad}}</p>
+            </div>
+        </div>
+    </div>
+</section>    

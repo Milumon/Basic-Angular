@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#noticias">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#genios">Genios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#envios">Envios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/nosotros']">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/colaboradores']">Colaboradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/tienda']">Tienda</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Opciones
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" [routerLink]="['/paises']">Paises</a></li>
+              <li><a class="dropdown-item" [routerLink]="['/tablacategorias']">Tabla categorías</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/iniciarsesion']">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+ 
+      </div>
+    </div>
+  </nav>

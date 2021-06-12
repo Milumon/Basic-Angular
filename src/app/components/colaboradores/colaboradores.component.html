@@ -1,0 +1,19 @@
+<section id="colaboradores" class="padded">
+    <div class="container">
+        <h2>Colaboradores</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col"  *ngFor="let filacolaborador of listaColaboradores">
+              <div class="card">
+                <img src="https://servicios.campus.pe/fotos/{{filacolaborador.foto}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    {{filacolaborador.tratamiento}} {{filacolaborador.nombres}} {{filacolaborador.apellidos}}</h5>
+                  <h6>{{filacolaborador.cargo}}</h6>
+                  <p class="card-text">{{filacolaborador.pais}}, {{filacolaborador.ciudad}}</p>
+                </div>
+              </div>
+            </div>
+        </div>    
+    </div>
+</section>   

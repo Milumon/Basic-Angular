@@ -1,0 +1,9 @@
+th span{
+    visibility: hidden;
+}
+th.ordenactive span{
+    visibility: visible;
+}
+.ordenactive{
+    visibility: visible;
+}
