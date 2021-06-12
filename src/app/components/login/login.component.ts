@@ -23,7 +23,20 @@ export class LoginComponent implements OnInit {
     this.loginService.signin(values.usuario, values.clave).subscribe(
     (res) => {
       console.log(res)
+      this.evaluarRespuesta(res);
     })
+
+  }
+
+  evaluarRespuesta(res){
+    if(res=="-1"){
+      alert("El usuario no existe");
+    }
+    else if(res == "-2"){
+      alert("La contraseña es incorrecta");
+    } else {
+      alert("Bienvenido");
+    }
 
   }
 
