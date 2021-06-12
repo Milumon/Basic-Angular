@@ -26,6 +26,7 @@ import { TiendaComponent } from './components/tienda/tienda.component';
 import { ProductosComponent } from './components/productos/productos.component';
 import { TablaCategoriasComponent } from './tablas/tabla-categorias/tabla-categorias.component';
 import { LoginComponent } from './components/login/login.component';
+import { EscritorioComponent } from './components/escritorio/escritorio.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { LoginComponent } from './components/login/login.component';
     TiendaComponent,
     ProductosComponent,
     TablaCategoriasComponent,
-    LoginComponent
+    LoginComponent,
+    EscritorioComponent
   ],
   imports: [
     BrowserModule,

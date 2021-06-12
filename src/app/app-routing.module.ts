@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ColaboradoresComponent } from './components/colaboradores/colaboradores.component';
+import { EscritorioComponent } from './components/escritorio/escritorio.component';
 import { LoginComponent } from './components/login/login.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { PaisDetalleComponent } from './components/pais-detalle/pais-detalle.component';
@@ -19,6 +20,8 @@ const routes: Routes = [
   {path: 'tienda', component: TiendaComponent},
   {path: 'tablacategorias', component: TablaCategoriasComponent},
   {path: 'iniciarsesion', component: LoginComponent},
+  {path: 'escritorio', component: EscritorioComponent},
+
 
 ];
 
